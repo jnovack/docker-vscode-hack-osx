@@ -44,6 +44,16 @@ Host OSX
 
 ## Caveats
 
+### Backdoor
+
+Do not be decieved, this is a *BACKDOOR* into your system.  This has not been vetted by a security team, nor
+is intended to anything more than a "work-around".
+
+* The directory you expose to docker is available for anyone who can figure out or crack your container's password.
+* This exposes a default linux container which can run binaries on your remote machine as root.  You have been warned.
+
+### Catalina Permissions
+
 In the `docker run` statement above, I am mapping my home directory to `/opt` on the Remote Host.  This may or
 may not be what you want, depending on your development environment.   If you map to `/opt`, upon first connection,
 **Docker** will attempt to enumerate all directories and prompt you for access.  If you have mapped to your
