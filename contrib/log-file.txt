@@ -1,0 +1,82 @@
+[10:43:49.650] remote-ssh@0.47.2
+[10:43:49.650] darwin x64
+[10:43:49.652] SSH Resolver called for "ssh-remote+desktop", attempt 1
+[10:43:49.652] SSH Resolver called for host: desktop
+[10:43:49.652] Setting up SSH remote "desktop"
+[10:43:49.667] Using commit id "8795a9889db74563ddd43eb0a897a2384129a619" and quality "stable" for server
+[10:43:49.668] Testing ssh with ssh -V
+[10:43:49.680] ssh exited with code: 0
+[10:43:49.680] Got stderr from ssh: OpenSSH_7.9p1, LibreSSL 2.7.3
+[10:43:49.684] Running script with connection command: ssh -T -D 49465 -o ConnectTimeout=15 desktop bash
+[10:43:49.685] Install and start server if needed
+[10:43:49.788] > Warning: Permanently added '[203.0.113.5]:2222' (ECDSA) to the list of known hosts.
+[10:43:49.789] Got some output, clearing connection timeout
+[10:43:49.857] > root@203.0.113.5's password: 
+[10:43:49.857] Showing password prompt
+[10:43:57.848] Got password response
+[10:43:57.848] "install" wrote data to terminal: "********************************"
+[10:43:57.858] > 
+[10:43:58.120] > ec447f5f5cc3: running
+[10:43:58.168] > Acquiring lock on /root/.vscode-server/bin/8795a9889db74563ddd43eb0a897a2384129a619/vscode-remote-lock.8795a9889db74563ddd43eb0a897a2384129a619
+> Installing to /root/.vscode-server/bin/8795a9889db74563ddd43eb0a897a2384129a619...
+[10:43:58.220] > Downloading with curl
+>   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+>                                  Dload  Upload   Total   Spent    Left  Speed
+>   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+[10:43:59.828] >  33 27.3M   33 9504k    0     0  6294k      0  0:00:04  0:00:01  0:00:03 9494k
+[10:44:00.719] >  52 27.3M   52 14.4M    0     0  5898k      0  0:00:04  0:00:02  0:00:02 7396k
+[10:44:01.794] >  62 27.3M   62 17.0M    0     0  4973k      0  0:00:05  0:00:03  0:00:02 5816k
+[10:44:02.746] >  85 27.3M   85 23.3M    0     0  5303k      0  0:00:05  0:00:04  0:00:01 5977k
+[10:44:03.154] > Download complete
+[10:44:04.714] > SSH_CONNECTION=172.17.0.1 50942 172.17.0.3 22
+> LANG=en_US.UTF-8
+> USER=root
+> PWD=/root
+> HOME=/root
+> SSH_CLIENT=172.17.0.1 50942 22
+> MAIL=/var/mail/root
+> SHELL=/bin/bash
+> SHLVL=2
+> VSCODE_AGENT_FOLDER=/root/.vscode-server
+> LOGNAME=root
+> PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+> LESSOPEN=||/usr/bin/lesspipe.sh %s
+> _=/usr/bin/printenv
+> OLDPWD=/root/.vscode-server/bin/8795a9889db74563ddd43eb0a897a2384129a619
+> Starting server...
+> Waiting for server log...
+[10:44:05.238] > Waiting for server log...
+[10:44:05.760] >  
+> *
+> * Reminder: You may only use this software with Visual Studio family products,
+> * as described in the license (https://go.microsoft.com/fwlink/?linkid=2077057)
+> *
+>  
+[10:44:05.766] > ec447f5f5cc3: start
+> sshAuthSock====
+> agentPort==41713==
+> webViewServerPort====
+> osReleaseId==centos==
+> arch==x86_64==
+> webUiAccessToken====
+> ec447f5f5cc3: end
+[10:44:05.766] Received install output: 
+sshAuthSock====
+agentPort==41713==
+webViewServerPort====
+osReleaseId==centos==
+arch==x86_64==
+webUiAccessToken====
+
+[10:44:05.767] Remote server is listening on port 41713
+[10:44:05.767] Parsed server configuration: {"agentPort":41713,"osReleaseId":"centos","arch":"x86_64","webUiAccessToken":"","sshAuthSock":""}
+[10:44:05.769] Starting forwarding server. localPort 49469 -> socksPort 49465 -> remotePort 41713
+[10:44:05.769] Forwarding server listening on 49469
+[10:44:05.770] Waiting for ssh tunnel to be ready
+[10:44:05.771] [Forwarding server 49469] Got connection 0
+[10:44:05.772] Tunneled remote port 41713 to local port 49469
+[10:44:05.772] Resolved "ssh-remote+desktop" to "127.0.0.1:49469"
+[10:44:05.773] TELEMETRY: {"eventName":"resolver","properties":{"outcome":"success","osReleaseId":"centos","arch":"x86_64","askedPw":"1","askedPassphrase":"0","asked2fa":"0","askedHostKey":"0","remoteInConfigFile":"1","gotUnrecognizedPrompt":"0"},"measures":{"resolveAttempts":1,"retries":1}}
+[10:44:05.774] ------
+[10:44:05.783] [Forwarding server 49469] Got connection 1
+[10:44:05.783] [Forwarding server 49469] Got connection 2
