@@ -1,6 +1,13 @@
 # docker-vscode-hack-osx
 Work-Around and Discussion for https://github.com/microsoft/vscode-remote-release/issues/24
 
+## 2020-02 Update
+
+[Upstream Issue 24](https://github.com/microsoft/vscode-remote-release/issues/24) has been
+closed with a work-around until official mainstream support.  I am no longer accepting issues
+or pull-requests since official support will be provided.  Please support the original
+developers. I am archiving this repository for posterity.  
+
 ## Preamble
 
 This repository was made to provide files and instructions for implementing the work-around for
